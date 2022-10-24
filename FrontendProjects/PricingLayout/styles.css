@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: hsl(240, 78%, 98%);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: 'Montserrat', sans-serif;
+
+    text-align: center;
+
+    min-height: 90vh;
+}
+
+.container {
+
+    margin: auto;
+
+    max-width: 100%;
+
+    width: 75rem;
+}
+
+.flex {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+h1 {
+
+color: hsl(233, 13%, 49%);
+
+}
+
+.toggle-container {
+
+    color:hsl(234, 14%, 74%);
+    margin-bottom: 40px;
+
+}
+
+.price-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    color: hsl(233, 13%, 49%);
+    padding: 30px;
+    margin: 15px;
+}
+
+.price-box.premium {
+
+    background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%));
+    color: #fff;
+
+    transform: scale(1.15);
+
+
+}
+
+.price-box .premium > * {
+    transform: scale(0.869);
+}
+
+.price-box h4 {
+    margin: 0;
+}
+
+
+.price-box p {
+    color: hsl(232, 13%, 33%);
+    font-size: 4em;
+    margin: 10px 0;
+    width: 250px;
+}
+
+
+.price-box ul {
+    border-top: 1px solid hsl(234, 14%, 74%);
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.price-box ul li {
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+    font-size: 14px;
+    padding: 15px 0;
+
+}
+
+.price-box button {
+    background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%));
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    padding: 14px;
+    margin-top: 10px;
+    width: 100%;
+    text-transform: uppercase;
+
+}
+
+.price-box.premium ul,
+.price-box.premium ul li {
+	border-color: #f0f0f0;
+}
+
+
+.toggle-container label {
+    background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+    );
+    border-radius: 40px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5 10px;
+    position: relative;
+    height: 30px;
+    width: 60px;
+}
+
+.toggle-container label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    height: 25px;
+    width: 25px;
+    transition: transform 0.6s ease;
+}
+
+.toggle-container input {
+    position: absolute;
+    left: -9999px;
+}
+
+.toggle-container input:checked + label .ball {
+    transform: translateX(30px);
+
+}
+
+
+
+
+
+
+
+
+
